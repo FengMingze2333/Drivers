@@ -153,7 +153,7 @@ static void reverse_char(char arr[])
 //draw ASCII character
 void oled_draw_ASCII(int16_t x, int16_t y, char arr[], FlagStatus flag, FlushStatus flush)
 {
-  if(x >= 0 && x <= DISPLAY_WIDTH && y >= 0 && y <= DISPLAY_HEIGHT)
+  if(x >= 0 && x < DISPLAY_WIDTH && y >= 0 && y < DISPLAY_HEIGHT)
   {
 	int32_t c = 0;
 	uint8_t j = 0;
